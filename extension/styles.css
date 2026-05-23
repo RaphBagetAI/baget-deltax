@@ -1,0 +1,29 @@
+/* Styling for the Deltax prototype button */
+#deltax-leak-btn {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 9999;
+    background-color: #1B4332;
+    color: #F5F1EB;
+    border: 2px solid #D4A853;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    font-family: 'Open Sans', sans-serif;
+    transition: all 0.2s ease-in-out;
+}
+
+#deltax-leak-btn:hover {
+    background-color: #2D3436;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+/* Base styles for the alert card */
+#deltax-alert-card {
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}

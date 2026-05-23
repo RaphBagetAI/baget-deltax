@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Deltax - Indy Fiscal Optimizer",
+  "version": "0.1.0",
+  "description": "Flags tax deductions small-business owners typically miss on Indy.",
+  "permissions": ["activeTab", "scripting", "webNavigation"],
+  "host_permissions": ["*://*.indy.fr/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.indy.fr/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "action": {
+    "default_title": "Deltax"
+  }
+}
